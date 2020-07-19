@@ -1,4 +1,4 @@
-import Style, { toValueString } from './style';
+import Style from './style';
 
 import { List, Set, Map } from 'immutable';
 
