@@ -4,7 +4,7 @@ import * as SocketIO from 'socket.io';
 import { closeDocument, connect, getSessionByID } from './redis';
 import { OpenDocument } from './redis/openDocument';
 
-import { Document } from './document';
+import { Document } from './io/document';
 import { Event, reducer } from './io/events';
 
 import { HandshakeEvent, parseHandshake } from './serverEvents';

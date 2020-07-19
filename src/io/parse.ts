@@ -1,8 +1,8 @@
 import { List, Map } from 'immutable';
 
-import { Document } from '../document';
-import { Item, ItemID, CursorPosition } from '../document/item';
-import Style, { validateUnitType } from '../document/style';
+import { Document } from './document';
+import { Item, ItemID, CursorPosition } from './document/item';
+import Style, { validateUnitType } from './document/style';
 
 import { Event } from './events';
 

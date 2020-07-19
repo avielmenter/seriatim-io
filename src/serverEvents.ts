@@ -1,4 +1,4 @@
-import { Document } from './document';
+import { Document } from './io/document';
 
 import { parseDocument } from './io/parse';
 
