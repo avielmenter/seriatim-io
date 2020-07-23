@@ -302,13 +302,13 @@ export function parseClientHandshake(raw: any): ClientHandshake | undefined {
     if (code != "CLIENT_HANDSHAKE")
         return undefined;
 
-    const { sessionID, documentID } = raw.data;
+    const { documentID } = raw.data;
     const document = parseDocument(raw.document);
 
-    if (!document || typeof sessionID != "string" || typeof documentID != "string")
+    if (!document || typeof documentID != "string")
         return undefined;
 
     return {
-        code: "CLIENT_HANDSHAKE", data: { sessionID, documentID, document }
+        code: "CLIENT_HANDSHAKE", data: { documentID, document }
     };
 }
